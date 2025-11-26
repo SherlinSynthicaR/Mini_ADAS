@@ -1,0 +1,30 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message 0x200 h;
+  int Head_light;
+  int Speed,light;
+  
+}
+on message Sensor_msg
+{
+  Speed=this.Speed_sig;
+  light=this.Amb_sig;
+  if(light>70)
+  {
+    Head_light=0;}
+  else if((light>20 && light<70)&&(Speed>0 && Speed<90))
+  {
+    Head_light=1;}
+  else if((light<20)&&(Speed>90)){
+    Head_light=2; }
+  
+h.Headlight_sig=Head_light;
+  output(h);
+  write("Light=%d%%,Speed=%dKm/hr ->Mode=%d",light,Speed,Head_light);
+}

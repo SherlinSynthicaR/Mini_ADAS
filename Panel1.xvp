@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Panel1">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">72, 13</Property>
+      <Property Name="Location">369, 76</Property>
+      <Property Name="Text">SPEED : Km/hr</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">65, 13</Property>
+      <Property Name="Location">81, 76</Property>
+      <Property Name="Text">Ambient Light</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl3" ControlName="LED Control 3">
+      <Property Name="Name">LEDControl3</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">389, 171</Property>
+      <Property Name="UsedLEDColorOn">GreenYellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SwitchValueOn">2</Property>
+      <Property Name="SwitchValueOff">1</Property>
+      <Property Name="SymbolConfiguration">5;2;Ambientlight;Headlight;Headlight_msg;Headlight_sig;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">4</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl2" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl2</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">254, 171</Property>
+      <Property Name="UsedLEDColorOn">Yellow</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;2;Ambientlight;Headlight;Headlight_msg;Headlight_sig;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">3</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl1" ControlName="LED Control">
+      <Property Name="Name">LEDControl1</Property>
+      <Property Name="Size">22, 24</Property>
+      <Property Name="Location">118, 171</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SwitchValueOn">0</Property>
+      <Property Name="SymbolConfiguration">5;2;Ambientlight;Headlight;Headlight_msg;Headlight_sig;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl2" ControlName="LCD Control 2">
+      <Property Name="Name">LCDControl2</Property>
+      <Property Name="Size">164, 50</Property>
+      <Property Name="Location">328, 11</Property>
+      <Property Name="NumberIntDigits">3</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;2;Ambientlight;Sensor;Sensor_msg;Speed_sig;1;CAN;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl1" ControlName="LCD Control">
+      <Property Name="Name">LCDControl1</Property>
+      <Property Name="Size">164, 50</Property>
+      <Property Name="Location">41, 11</Property>
+      <Property Name="NumberIntDigits">3</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;2;Ambientlight;Sensor;Sensor_msg;Amb_sig;1;CAN;;-1;;;</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">580, 270</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>

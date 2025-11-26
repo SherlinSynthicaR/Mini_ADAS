@@ -1,0 +1,25 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message 0x100 s;
+  msTimer t;
+}
+
+on start
+{
+ setTimer(t,2000); 
+}
+
+on timer t
+{
+  setTimer(t,2000);
+  s.Amb_sig=random(100);
+  s.Speed_sig=random(240);
+  output(s);
+}
+
